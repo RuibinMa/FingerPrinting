@@ -1,4 +1,4 @@
-#include "helloworld.h"
+#include <iostream>
 #include <sqlite3.h>
 #include <string>
 
@@ -6,9 +6,6 @@ int callback(void *NotUsed, int argc, char **argv, char **azColName);
 
 int main()
 {
-	helloworld h;
-	
-	h.print();
     std::cout<<sqlite3_libversion()<<std::endl;
 
 	sqlite3 *db;
